@@ -1,0 +1,56 @@
+Win32-TarUtil Version 0.01
+
+UnTgz, copy and wipe entire directories in Windows
+
+SYNOPSIS
+
+    use Win32::TarUtil qw(:all);
+
+    my $d = tu_extract('C:/test/arch.tar.gz');
+    print "Archive has been extracted into '$d'\n";
+
+    tu_wipe('C:/data/dir1');
+    tu_copy($d => 'C:/data/dir1');
+
+INSTALLATION
+
+    To install this module, run the following commands:
+
+	perl Makefile.PL
+	make
+	make test
+	make install
+
+SUPPORT AND DOCUMENTATION
+
+    After installing, you can find documentation for this module with the
+    perldoc command.
+
+    perldoc Win32::TarUtil
+
+You can also look for information at:
+
+    RT, CPAN's request tracker
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Win32-TarUtil
+
+    AnnoCPAN, Annotated CPAN documentation
+        http://annocpan.org/dist/Win32-TarUtil
+
+    CPAN Ratings
+        http://cpanratings.perl.org/d/Win32-TarUtil
+
+    Search CPAN
+        http://search.cpan.org/dist/Win32-TarUtil/
+
+
+AUTHOR
+
+    Klaus Eichner <klaus03@gmail.com>
+
+COPYRIGHT AND LICENSE
+
+    Copyright (C) 2014 by Klaus Eichner
+
+    All rights reserved. This program is free software; you can redistribute
+    it and/or modify it under the terms of the artistic license 2.0,
+    see http://www.opensource.org/licenses/artistic-license-2.0.php
