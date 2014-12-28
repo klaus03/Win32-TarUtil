@@ -11,7 +11,6 @@ our @ISA         = qw(Exporter);
 our %EXPORT_TAGS = ( 'all' => [ qw(tu_extract tu_wipe tu_copy) ] );
 our @EXPORT_OK   = ( @{ $EXPORT_TAGS{'all'} } );
 our @EXPORT      = qw();
-our $VERSION     = '0.01';
 
 sub tu_extract {
     my $arch    = $_[0];
